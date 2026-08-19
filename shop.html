@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop | J's MAD Sweets</title>
+<meta name="description" content="Order custom cakes, cupcakes and brownies from J's MAD Sweets in Fort Wayne.">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&family=Zilla+Slab:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<!-- TODO: Stripe Buy Button script. Requires a live Stripe account with Buy Buttons created in the Stripe Dashboard. -->
+<script async src="https://js.stripe.com/v3/buy-button.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav-bar">
+    <a href="index.html" class="brand">
+      <img src="images/logo.png" alt="J's MAD Sweets logo">
+      <span>J's MAD Sweets</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="shop.html" class="active">Shop</a></li>
+      <li><a href="gift-cards.html">Gift Cards</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="shop.html" class="btn btn-primary">Order Now</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="page-banner">
+    <div class="container">
+      <h1>Shop</h1>
+      <p>Pick your favorite &mdash; every order is baked fresh, just for you.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="card-grid">
+
+        <div class="card">
+          <img src="images/product-cake.svg" alt="Placeholder photo of a custom cake">
+          <div class="card-body">
+            <h3>Custom Cakes</h3>
+            <p>Layered, filled and decorated to match your celebration. Starting price shown, final price depends on size and design.</p>
+            <div class="buy-button-wrap">
+              <!-- TODO: replace buy-button-id and publishable-key with real values from the Stripe Dashboard -->
+              <stripe-buy-button
+                buy-button-id="buy_btn_TODO_CAKE"
+                publishable-key="pk_test_TODO_REPLACE_WITH_REAL_KEY">
+              </stripe-buy-button>
+              <p class="placeholder-note">TODO: connect real Stripe Buy Button</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/product-cupcakes.svg" alt="Placeholder photo of cupcakes">
+          <div class="card-body">
+            <h3>Cupcakes (Dozen)</h3>
+            <p>A dozen bite-sized favorites in your choice of flavors.</p>
+            <div class="buy-button-wrap">
+              <!-- TODO: replace buy-button-id and publishable-key with real values from the Stripe Dashboard -->
+              <stripe-buy-button
+                buy-button-id="buy_btn_TODO_CUPCAKES"
+                publishable-key="pk_test_TODO_REPLACE_WITH_REAL_KEY">
+              </stripe-buy-button>
+              <p class="placeholder-note">TODO: connect real Stripe Buy Button</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/product-brownies.svg" alt="Placeholder photo of brownies">
+          <div class="card-body">
+            <h3>Brownies (Tray)</h3>
+            <p>Rich, fudgy squares &mdash; the treat that started it all.</p>
+            <div class="buy-button-wrap">
+              <!-- TODO: replace buy-button-id and publishable-key with real values from the Stripe Dashboard -->
+              <stripe-buy-button
+                buy-button-id="buy_btn_TODO_BROWNIES"
+                publishable-key="pk_test_TODO_REPLACE_WITH_REAL_KEY">
+              </stripe-buy-button>
+              <p class="placeholder-note">TODO: connect real Stripe Buy Button</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section-alt">
+    <div class="container section-heading">
+      <h2>Custom Orders</h2>
+      <p>Looking for something special? <a href="contact.html">Get in touch</a> and we'll help you design the perfect cake for your event.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>J's MAD Sweets</h3>
+        <p>Cakes, cupcakes, brownies and more &mdash; handcrafted in Fort Wayne, IN since 2020.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="gift-cards.html">Gift Cards</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul class="footer-links">
+          <li><a href="mailto:hello@jsmadsweets.com">hello@jsmadsweets.com</a></li>
+          <li>Fort Wayne, IN <br><span class="placeholder-note">TODO: add exact address</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Follow Along</h3>
+        <ul class="social-links">
+          <li><a href="#" aria-label="Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="TikTok">TikTok</a></li>
+        </ul>
+        <p class="placeholder-note">TODO: replace with real social links</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; <span id="year"></span> J's MAD Sweets. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

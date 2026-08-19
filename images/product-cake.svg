@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Placeholder photo of a cake">
+  <rect width="600" height="450" fill="#FBFAF9"/>
+  <rect x="14" y="14" width="572" height="422" fill="none" stroke="#5C4033" stroke-width="4" rx="14"/>
+  <g transform="translate(300,250)">
+    <rect x="-140" y="-20" width="280" height="90" rx="8" fill="#5C4033"/>
+    <rect x="-110" y="-90" width="220" height="80" rx="8" fill="#5C4033" opacity="0.9"/>
+    <rect x="-140" y="-28" width="280" height="12" fill="#2CCDC3"/>
+    <rect x="-110" y="-98" width="220" height="10" fill="#2CCDC3"/>
+    <circle cx="-70" cy="-115" r="8" fill="#2CCDC3"/>
+    <circle cx="0" cy="-118" r="8" fill="#2CCDC3"/>
+    <circle cx="70" cy="-115" r="8" fill="#2CCDC3"/>
+  </g>
+  <text x="300" y="400" text-anchor="middle" font-family="Georgia, serif" font-size="24" fill="#473C2F">Cake Photo Placeholder</text>
+</svg>

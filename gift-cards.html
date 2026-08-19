@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gift Cards | J's MAD Sweets</title>
+<meta name="description" content="Buy a J's MAD Sweets gift card for the sweet-tooth in your life.">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&family=Zilla+Slab:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<!-- TODO: Stripe Buy Button script. Requires a live Stripe account with a Buy Button created in the Stripe Dashboard. -->
+<script async src="https://js.stripe.com/v3/buy-button.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav-bar">
+    <a href="index.html" class="brand">
+      <img src="images/logo.png" alt="J's MAD Sweets logo">
+      <span>J's MAD Sweets</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="gift-cards.html" class="active">Gift Cards</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="shop.html" class="btn btn-primary">Order Now</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="page-banner">
+    <div class="container">
+      <h1>Gift Cards</h1>
+      <p>Give the gift of something sweet.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="card-grid" style="max-width:480px;margin:0 auto;">
+        <div class="card">
+          <div class="card-body">
+            <h3>J's MAD Sweets Gift Card</h3>
+            <p>Choose your amount at checkout. Delivered by email, redeemable on any cake, cupcake or brownie order.</p>
+            <div class="buy-button-wrap">
+              <!-- TODO: replace buy-button-id and publishable-key with real values from the Stripe Dashboard -->
+              <stripe-buy-button
+                buy-button-id="buy_btn_TODO_GIFTCARD"
+                publishable-key="pk_test_TODO_REPLACE_WITH_REAL_KEY">
+              </stripe-buy-button>
+              <p class="placeholder-note">TODO: connect real Stripe Buy Button</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>J's MAD Sweets</h3>
+        <p>Cakes, cupcakes, brownies and more &mdash; handcrafted in Fort Wayne, IN since 2020.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="gift-cards.html">Gift Cards</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul class="footer-links">
+          <li><a href="mailto:hello@jsmadsweets.com">hello@jsmadsweets.com</a></li>
+          <li>Fort Wayne, IN <br><span class="placeholder-note">TODO: add exact address</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Follow Along</h3>
+        <ul class="social-links">
+          <li><a href="#" aria-label="Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="TikTok">TikTok</a></li>
+        </ul>
+        <p class="placeholder-note">TODO: replace with real social links</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; <span id="year"></span> J's MAD Sweets. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

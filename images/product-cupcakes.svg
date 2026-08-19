@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Placeholder photo of cupcakes">
+  <rect width="600" height="450" fill="#FBFAF9"/>
+  <rect x="14" y="14" width="572" height="422" fill="none" stroke="#5C4033" stroke-width="4" rx="14"/>
+  <g transform="translate(180,270)">
+    <path d="M-55 0 L55 0 L40 60 L-40 60 Z" fill="#5C4033"/>
+    <path d="M-60 0 C -60 -55, 60 -55, 60 0 C 60 15, -60 15, -60 0 Z" fill="#2CCDC3"/>
+    <circle cx="0" cy="-60" r="10" fill="#473C2F"/>
+  </g>
+  <g transform="translate(300,240)">
+    <path d="M-55 0 L55 0 L40 60 L-40 60 Z" fill="#5C4033"/>
+    <path d="M-60 0 C -60 -55, 60 -55, 60 0 C 60 15, -60 15, -60 0 Z" fill="#473C2F"/>
+    <circle cx="0" cy="-60" r="10" fill="#2CCDC3"/>
+  </g>
+  <g transform="translate(420,270)">
+    <path d="M-55 0 L55 0 L40 60 L-40 60 Z" fill="#5C4033"/>
+    <path d="M-60 0 C -60 -55, 60 -55, 60 0 C 60 15, -60 15, -60 0 Z" fill="#2CCDC3"/>
+    <circle cx="0" cy="-60" r="10" fill="#473C2F"/>
+  </g>
+  <text x="300" y="400" text-anchor="middle" font-family="Georgia, serif" font-size="24" fill="#473C2F">Cupcakes Photo Placeholder</text>
+</svg>
