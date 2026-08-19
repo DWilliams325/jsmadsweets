@@ -337,6 +337,27 @@ section { padding: 60px 0; }
   color: rgba(251, 250, 249, 0.7);
 }
 
+/* ===== Facebook gallery embed ===== */
+.fb-embed-wrap {
+  max-width: 560px;
+  margin: 0 auto;
+  background: var(--color-white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 12px;
+}
+
+.fb-embed-wrap iframe {
+  width: 100%;
+  border: none;
+  overflow: hidden;
+}
+
+.fb-embed-fallback {
+  text-align: center;
+  margin-top: 16px;
+}
+
 /* ===== Page banner (interior pages) ===== */
 .page-banner {
   background: var(--color-teal);

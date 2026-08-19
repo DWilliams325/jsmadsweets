@@ -3,15 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gift Cards | J's MAD Sweets</title>
-<meta name="description" content="Buy a J's MAD Sweets gift card for the sweet-tooth in your life.">
+<title>Dessert Gallery | J's MAD Sweets</title>
+<meta name="description" content="Browse a gallery of custom cakes, cupcakes and brownies from J's MAD Sweets, a Fort Wayne home bakery.">
 <link rel="icon" href="images/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&family=Zilla+Slab:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
-<!-- TODO: Stripe Buy Button script. Requires a live Stripe account with a Buy Button created in the Stripe Dashboard. -->
-<script async src="https://js.stripe.com/v3/buy-button.js"></script>
 </head>
 <body>
 
@@ -28,7 +26,7 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="shop.html">Shop</a></li>
-      <li><a href="gift-cards.html" class="active">Gift Cards</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
       <li><a href="contact.html">Contact</a></li>
       <li><a href="shop.html" class="btn btn-primary">Order Now</a></li>
     </ul>
@@ -38,29 +36,48 @@
 <main>
   <section class="page-banner">
     <div class="container">
-      <h1>Gift Cards</h1>
-      <p>Give the gift of something sweet.</p>
+      <h1>Cake &amp; Dessert Gallery</h1>
+      <p>A look at custom cakes, cupcakes and brownies we've baked for Fort Wayne celebrations.</p>
     </div>
   </section>
 
   <section>
     <div class="container">
-      <div class="card-grid" style="max-width:480px;margin:0 auto;">
-        <div class="card">
-          <div class="card-body">
-            <h3>J's MAD Sweets Gift Card</h3>
-            <p>Choose your amount at checkout. Delivered by email, redeemable on any cake, cupcake or brownie order.</p>
-            <div class="buy-button-wrap">
-              <!-- TODO: replace buy-button-id and publishable-key with real values from the Stripe Dashboard -->
-              <stripe-buy-button
-                buy-button-id="buy_btn_TODO_GIFTCARD"
-                publishable-key="pk_test_TODO_REPLACE_WITH_REAL_KEY">
-              </stripe-buy-button>
-              <p class="placeholder-note">TODO: connect real Stripe Buy Button</p>
-            </div>
-          </div>
-        </div>
+      <div class="section-heading">
+        <h2>Recent Creations</h2>
+        <p>This gallery pulls straight from our Facebook page, so new photos show up here as soon as they're posted &mdash; no separate upload needed.</p>
       </div>
+
+      <div class="fb-embed-wrap">
+        <!--
+          To post new gallery photos, just upload them as photos/posts on the
+          J's MAD Sweets Facebook Page (facebook.com/JsMADSweets) — this embed
+          pulls from that page automatically, no code changes needed.
+        -->
+        <iframe
+          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FJsMADSweets&tabs=timeline&width=500&height=700&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false"
+          width="500"
+          height="700"
+          style="border:none;overflow:hidden"
+          scrolling="no"
+          frameborder="0"
+          allowfullscreen="true"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          title="J's MAD Sweets Facebook photo gallery">
+        </iframe>
+        <p class="fb-embed-fallback placeholder-note">
+          Prefer to browse on Facebook directly? Visit our
+          <a href="https://www.facebook.com/JsMADSweets" target="_blank" rel="noopener">Facebook page</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-alt">
+    <div class="container section-heading">
+      <h2>See Something You Love?</h2>
+      <p>Every design can be customized for your own celebration.</p>
+      <a href="shop.html" class="btn btn-primary">Order Now</a>
     </div>
   </section>
 </main>
@@ -78,25 +95,22 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="shop.html">Shop</a></li>
-          <li><a href="gift-cards.html">Gift Cards</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div>
         <h3>Contact</h3>
         <ul class="footer-links">
-          <li><a href="mailto:hello@jsmadsweets.com">hello@jsmadsweets.com</a></li>
-          <li>Fort Wayne, IN <br><span class="placeholder-note">TODO: add exact address</span></li>
+          <li><a href="mailto:JsMADSweets@gmail.com">JsMADSweets@gmail.com</a></li>
+          <li>Fort Wayne, IN</li>
         </ul>
       </div>
       <div>
         <h3>Follow Along</h3>
         <ul class="social-links">
-          <li><a href="#" aria-label="Facebook">Facebook</a></li>
-          <li><a href="#" aria-label="Instagram">Instagram</a></li>
-          <li><a href="#" aria-label="TikTok">TikTok</a></li>
+          <li><a href="https://www.facebook.com/JsMADSweets" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a></li>
         </ul>
-        <p class="placeholder-note">TODO: replace with real social links</p>
       </div>
     </div>
     <div class="footer-bottom">
