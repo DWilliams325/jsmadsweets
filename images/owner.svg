@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Placeholder photo of the owner">
-  <rect width="600" height="600" fill="#2CCDC3"/>
-  <circle cx="300" cy="300" r="260" fill="#FBFAF9"/>
-  <circle cx="300" cy="230" r="110" fill="#473C2F" opacity="0.85"/>
-  <path d="M120 560 C 120 400, 480 400, 480 560 Z" fill="#473C2F" opacity="0.85"/>
-  <text x="300" y="560" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#FBFAF9" opacity="0">Owner Photo Placeholder</text>
-  <text x="300" y="30" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#473C2F">Owner Photo Placeholder</text>
-</svg>
