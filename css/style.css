@@ -222,12 +222,19 @@ section { padding: 60px 0; }
 }
 
 .card {
+  position: relative;
   background: var(--color-white);
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
   display: flex;
   flex-direction: column;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:has(.card-body .btn):hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(71, 60, 47, 0.18);
 }
 
 .card img { width: 100%; aspect-ratio: 4 / 3; height: auto; object-fit: cover; object-position: center; }
@@ -241,6 +248,14 @@ section { padding: 60px 0; }
 }
 
 .card-body .btn { align-self: flex-start; margin-top: auto; }
+
+/* Makes the whole card clickable via the single existing card link, not just the visible button */
+.card-body .btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
 
 /* ===== About ===== */
 .about-grid {
