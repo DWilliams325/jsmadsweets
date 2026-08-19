@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order | J's MAD Sweets</title>
+<meta name="description" content="Place a custom order for cakes, cookies, cupcakes or brownies from J's MAD Sweets in Fort Wayne.">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&family=Zilla+Slab:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav-bar">
+    <a href="index.html" class="brand">
+      <img src="images/logo.png" alt="J's MAD Sweets logo">
+      <span>J's MAD Sweets</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="order.html" class="btn btn-primary">Order Now</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="page-banner">
+    <div class="container">
+      <h1>Place an Order</h1>
+      <p>Tell us what you're craving and we'll follow up to confirm the details.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <form id="order-form" class="order-form" action="https://formspree.io/f/mrpzrlak" method="POST">
+        <input type="hidden" name="_subject" value="New Order Request - J's MAD Sweets">
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+        <div class="form-group">
+          <label for="item-type">Item Type</label>
+          <select id="item-type" name="Item Type" required>
+            <option value="" disabled selected>Select an item&hellip;</option>
+            <option value="Cake">Cake</option>
+            <option value="Cookies">Cookies</option>
+            <option value="Cupcakes">Cupcakes</option>
+            <option value="Brownies">Brownies</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="flavor">Flavor</label>
+            <input type="text" id="flavor" name="Flavor" placeholder="e.g. Chocolate, Funfetti, Red Velvet" required>
+          </div>
+          <div class="form-group">
+            <label for="size-quantity">Size or Quantity</label>
+            <input type="text" id="size-quantity" name="Size or Quantity" placeholder="e.g. 2 dozen, 9-inch round, serves 20" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="design-notes">Color / Theme / Design Notes</label>
+          <p class="form-hint">Cakes: the more detail the better — colors, theme, occasion, any inspiration photos you can describe.</p>
+          <textarea id="design-notes" name="Design Notes" rows="5" placeholder="Tell us about colors, theme, occasion, and any design details..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="needed-by">Needed-By Date</label>
+          <input type="date" id="needed-by" name="Needed-By Date" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="Name" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="Phone" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit Order</button>
+        <p id="order-form-status" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>J's MAD Sweets</h3>
+        <p>Cakes, cookies, cupcakes, brownies and more &mdash; handcrafted in Fort Wayne, IN since 2020.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul class="footer-links">
+          <li><a href="mailto:JsMADSweets@gmail.com">JsMADSweets@gmail.com</a></li>
+          <li>Fort Wayne, IN</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Follow Along</h3>
+        <ul class="social-links">
+          <li><a href="https://www.facebook.com/JsMADSweets" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; <span id="year"></span> J's MAD Sweets. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/order-form.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
