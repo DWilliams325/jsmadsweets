@@ -249,6 +249,13 @@ section { padding: 60px 0; }
 
 .card-body .btn { align-self: flex-start; margin-top: auto; }
 
+.card-body .price {
+  font-family: var(--font-display);
+  color: var(--color-brown-light);
+  font-size: 1.1rem;
+  margin: -4px 0 0;
+}
+
 /* Makes the whole card clickable via the single existing card link, not just the visible button */
 .card-body .btn::after {
   content: '';
